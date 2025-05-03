@@ -1,0 +1,33 @@
+.mentions__control {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .mentions__highlighter {
+    padding: 10px;
+  }
+  
+  .mentions__input {
+    margin: 0;
+    color: white;
+  }
+  
+  .mentions__suggestions {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    z-index: 9999;
+  }
+  
+  .mentions__suggestions__item {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .mentions__suggestions__item--focused {
+    background-color: #007bff;
+    color: white;
+  }
+  

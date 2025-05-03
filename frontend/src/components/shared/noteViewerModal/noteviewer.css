@@ -1,0 +1,23 @@
+.note-viewer .p-6,.note-viewer .ql-toolbar,.note-viewer .ql-container,.note-viewer .ql-editor,.note-viewer .ql-tooltip,.note-viewer .w-full {
+    border: none !important;
+  }
+
+  .note-viewer  div {
+    border: none !important;
+  }
+  
+  .note-viewer .p-6 {
+    padding-top: 10px; /* Adjust the top padding as needed */
+  }
+  
+  .note-viewer .quill {
+    margin-top: 10px; /* Adjust the top margin to reduce space from the top */
+  }
+  
+  .note-viewer .w-full {
+    margin-top: 5px; /* Adjust for the other content inside */
+  }
+
+  .note-viewer .ql-toolbar.ql-snow{
+    display: none !important;
+  }
