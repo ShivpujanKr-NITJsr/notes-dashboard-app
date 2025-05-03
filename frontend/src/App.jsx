@@ -12,11 +12,16 @@ import Dashboard from "./components/pages/dashboard/Dashboard";
 import { AuthProvider, useAuthContext } from "./context/AuthContext";
 import SignUp from "./components/pages/signUp/SignUp";
 import NoteEditor from "./components/pages/noteEditor/NoteEditor";
+// ⬇️ Import and attach the interceptors at app start
+import { attachInterceptors } from "./utils/promeiseTrackerLoader/promiseTracker";
+import GlobalLoader from "./components/Loader";
+attachInterceptors(); // runs once
 
 export default function App() {
   return (
     <AuthProvider>
       <Router>
+        <GlobalLoader />
         <Routes>
           {/* Public Route */}
           <Route path="/login" element={<Login />} />

@@ -45,6 +45,8 @@ export const updateNote = async (_payload) => {
       const { status } = error.response;
       if (status === StatusCodes.UNAUTHORIZED) {
         alert("Wrong password");
+      }else {
+        alert("something went wrong")
       }
     }
     throw error;

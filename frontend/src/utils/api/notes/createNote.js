@@ -45,6 +45,8 @@ export const createNote = async (_payload) => {
       const { status } = error.response;
       if (status === StatusCodes.UNAUTHORIZED) {
         alert("Unauthorized access. Please log in again.");
+      }else{
+        alert("Internal Server Error")
       }
     }
     throw error;

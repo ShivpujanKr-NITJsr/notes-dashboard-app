@@ -42,6 +42,12 @@ export const login = async (_payload) => {
         alert("Wrong password");
       }else if(status === StatusCodes.NOT_FOUND) {
         alert("User not found");
+      }else if(status==StatusCodes.BAD_REQUEST){
+        if (error.details[0]?.message) {
+          alert(error.details[0].message);
+        } else {
+          alert("something went wrong")
+        }
       }
     }
     throw error;

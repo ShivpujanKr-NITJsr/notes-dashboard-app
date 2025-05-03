@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useAuthContext } from "../../../context/AuthContext"; // Adjust the path based on your project
+import { useAuthContext } from "../../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { ConfirmationDialog } from "../confirmationDialog/confirmationDialog";
 

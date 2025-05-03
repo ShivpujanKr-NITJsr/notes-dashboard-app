@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: "*", // Allow Vite frontend
     // origin: 'http://localhost:5173', // Allow Vite frontend
-    credentials: true, // If you're sending cookies or auth headers
+    credentials: true, // If sending cookies or auth headers
   })
 );
 

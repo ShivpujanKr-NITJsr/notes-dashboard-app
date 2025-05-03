@@ -31,7 +31,7 @@ export const getFilteredNotes = async (_payload) => {
           result,
           token,
         };
-      }
+      }                        // only for test ,not required as filter handled in frontend
       throw new Error();
     }
     throw new Error();

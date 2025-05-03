@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import services from "../../../../services/index.js";
-import UsersModel from "../../../../models/users.model.js"; // Import the UsersModel model
+import UsersModel from "../../../../models/users.model.js"; 
 import { StatusCodes } from "http-status-codes";
 import MESSAGE from "../../../../constants/message.js";
 import service from "../../../../services/index.js";
@@ -13,7 +13,7 @@ const register = async (req, res) => {
     const existingUser = await services.auth.isRegisteredEmail(email);
     if (existingUser) {
       return res
-        .status(StatusCodes.BAD_REQUEST)
+        .status(StatusCodes.CONFLICT)
         .json({ message: MESSAGE.post.fail });
     }
 

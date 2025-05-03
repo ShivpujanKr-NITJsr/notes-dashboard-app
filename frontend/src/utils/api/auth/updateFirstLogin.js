@@ -42,6 +42,10 @@ export const updateFirstLogin = async (_payload) => {
       const { status } = error.response;
       if (status === StatusCodes.BAD_REQUEST) {
         alert("is first login updation error");
+      }else if(status ==StatusCodes.NOT_FOUND){
+        alert("user not found")
+      }else{
+        alert("something went wrong")
       }
 
       throw error;

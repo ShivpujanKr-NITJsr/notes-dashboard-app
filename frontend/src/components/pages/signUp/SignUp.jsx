@@ -5,7 +5,7 @@ import { api } from '../../../utils';
 import { leftImage } from '../../../assets';
 
 const SignUp = () => {
-  const { login } = useAuthContext(); // Assuming you have a signUp function in your context
+  const { login } = useAuthContext(); 
   const navigate = useNavigate();
 
   const [username, setUsername] = useState('');
@@ -15,9 +15,13 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // In a real app, validate credentials here (API call, etc.)
+    //  validation credentials here (API call, etc.)
 
     try {
+      if(password.trim().length<6){
+        alert("minimum six length of password is required")
+        return;
+      }
       const response = await api.auth.register({ name: username, email, password });
       console.log("Signup response:", response);
       login(response.result, response.token); // Save user & token
@@ -89,7 +93,7 @@ const SignUp = () => {
             <div>
               <button
                 type="submit"
-                className="w-full p-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-200"
+                className="w-full p-2 bg-blue-600 text-white rounded cursor-pointer hover:bg-blue-700 transition duration-200"
               >
                 Sign Up
               </button>

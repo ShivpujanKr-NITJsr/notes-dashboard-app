@@ -1,7 +1,6 @@
 import bcrypt from 'bcrypt';
-// import db // Import the database models
-// const { User } = db; // Extract the User model
-import UsersModel from '../../../../models/users.model.js'; // Import the UsersModel
+
+import UsersModel from '../../../../models/users.model.js';
 
 import MESSAGE from '../../../../constants/message.js';
 import { StatusCodes } from 'http-status-codes';

@@ -61,7 +61,7 @@ notes-dashboard-app/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/notes-dashboard-app.git
+git clone https://github.com/ShivpujanKr-NITJsr/notes-dashboard-app.git
 cd notes-dashboard-app
 ```
 

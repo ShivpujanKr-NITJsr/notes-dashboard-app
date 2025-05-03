@@ -133,7 +133,7 @@ const Dashboard = () => {
           },
           {
             popover: {
-              title: "Happy Coding",
+              title: "Great!",
               description:
                 "And that is all, go ahead and start creating Notes .",
             },
