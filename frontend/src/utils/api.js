@@ -6,7 +6,7 @@ const get=async (endpoint,headers,params={})=>{
     try{
 
        
-        const response = await axios.get(`${url}:${port}/api/${version}/${endpoint}`, {
+        const response = await axios.get(`${url}:${port}api/${version}/${endpoint}`, {
             headers: headers,
             params: params
         });
@@ -27,7 +27,7 @@ const post=async (endpoint,payload,headers)=>{
     try{
 
         
-        const response = await axios.post(`${url}:${port}/api/${version}/${endpoint}`, payload, {
+        const response = await axios.post(`${url}:${port}api/${version}/${endpoint}`, payload, {
             headers: headers
         });
         const {status} = response;
@@ -45,7 +45,7 @@ const put=async (endpoint,payload,headers)=>{
     try{
         
 
-        const response = await axios.put(`${url}:${port}/api/${version}/${endpoint}`, payload, {
+        const response = await axios.put(`${url}:${port}api/${version}/${endpoint}`, payload, {
             headers: headers
         });
         const {status} = response;
@@ -63,7 +63,7 @@ const patch=async(endpoint,payload,headers)=>{
     try{
 
         
-        const response = await axios.patch(`${url}:${port}/api/${version}/${endpoint}`, payload, {
+        const response = await axios.patch(`${url}:${port}api/${version}/${endpoint}`, payload, {
             headers: headers
         });
         const {status} = response;
@@ -81,7 +81,7 @@ const del=async (endpoint,headers)=>{
     try{
 
         
-        const response = await axios.delete(`${url}:${port}/api/${version}/${endpoint}`, {
+        const response = await axios.delete(`${url}:${port}api/${version}/${endpoint}`, {
             headers: headers
         });
         const {status} = response;

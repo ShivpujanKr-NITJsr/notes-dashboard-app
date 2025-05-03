@@ -2,7 +2,7 @@ import {StatusCodes} from "http-status-codes";
 
 import { headers } from "../../../config/config";
 import { request } from "../../api";
-import MESSAGE from "../../../../../Backend/src/constants/message";
+import MESSAGE from "../../../../../frontend/src/constants/message";
 
 
 const { post } = request;
