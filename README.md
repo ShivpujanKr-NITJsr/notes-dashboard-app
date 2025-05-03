@@ -172,5 +172,26 @@ HUGGINGFACE_API_KEY=your-huggingface-access-token
 
 - MongoDB must be running locally or hosted on MongoDB Atlas
 - `OPENAI_API_KEY` and `HUGGINGFACE_API_KEY` are required for AI features
-
+- here open api key or HUGGINGFACE_API_KEY api key is of free ,so it will restrict the users from more request for summary quick view of notes . so you can use your paid version to get seamless summary
 ---
+
+
+## Screenshots
+
+### 🧾 Signup Page
+![Signup](./assets/signup.png)
+
+### 📄 Dashboard Page
+![Dashboard](./assets/dashboard.png)
+
+### 📱 filter Note
+![filter Note](./assets/filternote.png)
+
+### 🧾 Create Note
+![Create Note](./assets/reatenote.png)
+
+### 🧾 update Note Page
+![update Note Page](./assets/signup.png)
+
+### 🧾 dashboard with first card hovering -edit,delete,read icon on hover
+![Dashboard with first card hovering](./assets/dashboardwithfirstcardhovering.png)
