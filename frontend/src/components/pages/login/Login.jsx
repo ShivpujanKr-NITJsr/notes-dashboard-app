@@ -14,32 +14,25 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // In a real app, validate credentials here (API call, etc.)
-
     try {
       const response = await api.auth.login({ email, password });
-      // console.log("Login response:", response);
       login(response.result, response.token); // Save user & token
-    navigate("/");
+      navigate("/");
     } catch (err) {
       console.error("Login error:", err);
     }
-    
-
-    // After successful login
-    
   };
 
   useEffect(() => {
     if (isAuthenticated) {
       navigate("/"); // Redirect to dashboard if already authenticated
     }
-  }, []); // Empty dependency array to run only once
+  }, [isAuthenticated, navigate]);
 
   return (
     <div className="flex min-h-screen">
       {/* Left Section with Illustration */}
-      <div className="flex-1 bg-blue-600 flex items-center justify-center">
+      <div className="hidden md:flex flex-1 bg-blue-600 items-center justify-center">
         <img
           src={leftImage}
           alt="Illustration"
@@ -50,7 +43,7 @@ const LoginPage = () => {
       {/* Right Section for Form */}
       <div className="flex-1 flex items-center justify-center bg-white">
         <div className="max-w-md w-full p-8 space-y-8">
-          <h2 className="text-2xl font-bold text-gray-700">Hello,start Using Smart Notes!</h2>
+          <h2 className="text-2xl font-bold text-gray-700">Hello, start using Smart Notes!</h2>
           <p className="text-gray-500">Sign In to Get Started to Create Notes</p>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
@@ -87,7 +80,7 @@ const LoginPage = () => {
             <div>
               <button
                 type="submit"
-                className="w-full p-2 bg-blue-600 text-white rounded cursor-pointer hover:bg-blue-700 transition duration-200 "
+                className="w-full p-2 bg-blue-600 text-white rounded cursor-pointer hover:bg-blue-700 transition duration-200"
               >
                 Login
               </button>
@@ -97,7 +90,7 @@ const LoginPage = () => {
               <p className="text-gray-500">
                 Don't have an account?{" "}
                 <a href="/signup" className="text-blue-600 hover:underline">
-                  SignUp
+                  Sign Up
                 </a>
               </p>
             </div>
