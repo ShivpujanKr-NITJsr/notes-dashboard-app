@@ -96,7 +96,7 @@ npm start
 ```bash
 cd ../frontend
 npm install
-npm start
+npm run dev
 ```
 
 > Frontend will run at: `http://localhost:5173`
