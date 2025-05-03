@@ -195,3 +195,12 @@ HUGGINGFACE_API_KEY=your-huggingface-access-token
 
 ### 🧾 dashboard with first card hovering -edit,delete,read icon on hover
 ![Dashboard with first card hovering](./assets/dashboardwithfirstcardhovering.png)
+
+### 🧾 onBoarding1
+![update Note Page](./assets/onBoarding1.png)
+
+### 🧾 onBoarding2
+![update Note Page](./assets/onBoarding2.png)
+
+### 🧾 onBoarding3
+![update Note Page](./assets/onBoarding3.png)
