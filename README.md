@@ -191,7 +191,7 @@ HUGGINGFACE_API_KEY=your-huggingface-access-token
 ![Create Note](./assets/reatenote.png)
 
 ### 🧾 update Note Page
-![update Note Page](./assets/signup.png)
+![update Note Page](./assets/updatenote.png)
 
 ### 🧾 dashboard with first card hovering -edit,delete,read icon on hover
 ![Dashboard with first card hovering](./assets/dashboardwithfirstcardhovering.png)
