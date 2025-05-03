@@ -197,10 +197,10 @@ HUGGINGFACE_API_KEY=your-huggingface-access-token
 ![Dashboard with first card hovering](./assets/dashboardwithfirstcardhovering.png)
 
 ### 🧾 onBoarding1
-![update Note Page](./assets/onBoarding1.png)
+![update Note Page](./assets/onboarding1.png)
 
 ### 🧾 onBoarding2
-![update Note Page](./assets/onBoarding2.png)
+![update Note Page](./assets/onboarding3.png)
 
 ### 🧾 onBoarding3
-![update Note Page](./assets/onBoarding3.png)
+![update Note Page](./assets/onboarding6.png)
