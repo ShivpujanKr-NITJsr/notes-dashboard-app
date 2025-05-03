@@ -14,6 +14,19 @@ const NoteEditor = () => {
   const [suggestedTags, setSuggestedTags] = useState([]);
   const navigate = useNavigate();
 
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline', 'strike'],
+      [{ color: [] }, { background: [] }],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['blockquote', 'code-block'],
+      ['link'],
+      ['clean'],
+    ],
+  };
+  
+
   const fetchNote = async () => {
     if (id) {
       const note = await api.notes.getNoteById({ id });
@@ -86,14 +99,16 @@ const NoteEditor = () => {
       />
 
       <div className="mb-4">
-        <ReactQuill
-          value={content}
-          onChange={(value) => {
-            setContent(value);
-            generateTagSuggestions(value);
-          }}
-          theme="snow"
-        />
+      <ReactQuill
+  value={content}
+  onChange={(value) => {
+    setContent(value);
+    generateTagSuggestions(value);
+  }}
+  theme="snow"
+  modules={modules}
+/>
+
       </div>
 
       <input
