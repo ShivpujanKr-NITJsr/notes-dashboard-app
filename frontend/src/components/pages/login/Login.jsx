@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthContext } from "../../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../../utils";
+import { leftImage } from "../../../assets";
 
 const LoginPage = () => {
   const { isAuthenticated, login } = useAuthContext();
@@ -40,7 +41,7 @@ const LoginPage = () => {
       {/* Left Section with Illustration */}
       <div className="flex-1 bg-blue-600 flex items-center justify-center">
         <img
-          src="your-illustration-url-here"
+          src={leftImage}
           alt="Illustration"
           className="w-1/2"
         />
@@ -50,7 +51,7 @@ const LoginPage = () => {
       <div className="flex-1 flex items-center justify-center bg-white">
         <div className="max-w-md w-full p-8 space-y-8">
           <h2 className="text-2xl font-bold text-gray-700">Hello!</h2>
-          <p className="text-gray-500">Sign In to Get Started</p>
+          <p className="text-gray-500">Sign In to Get Started to Create Notes</p>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>

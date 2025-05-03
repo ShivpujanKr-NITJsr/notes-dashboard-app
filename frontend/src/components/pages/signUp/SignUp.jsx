@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthContext } from '../../../context/AuthContext';
 import { api } from '../../../utils';
+import { leftImage } from '../../../assets';
 
 const SignUp = () => {
   const { login } = useAuthContext(); // Assuming you have a signUp function in your context
@@ -32,7 +33,7 @@ const SignUp = () => {
     <div className="flex min-h-screen">
       {/* Left Section with Illustration */}
       <div className="flex-1 bg-blue-600 flex items-center justify-center">
-        <img src="your-illustration-url-here" alt="Illustration" className="w-1/2" />
+        <img src={leftImage} alt="Illustration" className="w-1/2" />
       </div>
 
       {/* Right Section for Form */}

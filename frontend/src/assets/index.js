@@ -1,0 +1,1 @@
+export {default as leftImage } from "./image-notes.png"
