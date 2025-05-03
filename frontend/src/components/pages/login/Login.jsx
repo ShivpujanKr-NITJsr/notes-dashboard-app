@@ -50,7 +50,7 @@ const LoginPage = () => {
       {/* Right Section for Form */}
       <div className="flex-1 flex items-center justify-center bg-white">
         <div className="max-w-md w-full p-8 space-y-8">
-          <h2 className="text-2xl font-bold text-gray-700">Hello!</h2>
+          <h2 className="text-2xl font-bold text-gray-700">Hello,start Using Smart Notes!</h2>
           <p className="text-gray-500">Sign In to Get Started to Create Notes</p>
 
           <form className="space-y-4" onSubmit={handleSubmit}>

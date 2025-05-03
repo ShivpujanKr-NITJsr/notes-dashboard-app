@@ -40,7 +40,7 @@ const SignUp = () => {
       <div className="flex-1 flex items-center justify-center bg-white">
         <div className="max-w-md w-full p-8 space-y-8">
           <h2 className="text-2xl font-bold text-gray-700">Sign Up</h2>
-          <p className="text-gray-500">Create an account to get started</p>
+          <p className="text-gray-500">Create an account to get started WIth Smart Notes</p>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
             {/* Username Field */}
