@@ -1,4 +1,4 @@
-const env = import.meta.env.NODE_ENV || "LOCAL"; // Set the environment variable here
+const env = import.meta.env.NODE_ENV || "PROD"; // Set the environment variable here
 
 // "PROD" ,"DEV", "LOCAL"
 
